@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: Odds-based game
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+game:
+  bet:
+    min-number: 1
+    max-number: 10
+  leaderboard:
+    max-limit: 100
+  player:
+    initial-balance: 1000
+  winning-rules:
+    exact-match: 10      # multiplier for an exact match (10x)
+    one-off: 5           # multiplier for a bet that is off by one (5x)
+    two-off: 0.5         # multiplier for a bet that is off by two (half the bet amount)
