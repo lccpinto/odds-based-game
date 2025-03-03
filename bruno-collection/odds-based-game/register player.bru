@@ -1,0 +1,19 @@
+meta {
+  name: register player
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/players/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "John",
+    "surname": "Doe",
+    "username": "johnDoe"
+  }
+}

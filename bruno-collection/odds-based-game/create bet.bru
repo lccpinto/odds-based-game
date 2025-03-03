@@ -1,0 +1,19 @@
+meta {
+  name: create bet
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/bets
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "johnDoe",
+    "betNumber": 5,
+    "betAmount": 100
+  }
+}

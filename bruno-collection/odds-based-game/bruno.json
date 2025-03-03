@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "odds-based-game",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

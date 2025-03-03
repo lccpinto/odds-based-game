@@ -59,3 +59,8 @@ To run all unit tests, execute:
 
 After the tests finish, you can review the results in the generated report at:
 `build/reports/tests/test/index.html`.
+
+
+## Example JSON payloads
+
+You can find example JSON payloads for testing all the API endpoints [here](SAMPLE_JSON_PAYLOADS.md).

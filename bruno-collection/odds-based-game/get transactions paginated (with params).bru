@@ -1,0 +1,16 @@
+meta {
+  name: get transactions paginated (with params)
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:8080/transactions/player/johnDoe?size=2&page=0
+  body: none
+  auth: none
+}
+
+params:query {
+  size: 2
+  page: 0
+}
